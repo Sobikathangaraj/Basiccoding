@@ -19,7 +19,7 @@ public class Insert_next {
         else
         {
             Node temp=head;
-            temp.next=newnode;
+            if(temp!=null) temp.next=newnode;
         }
     }
     public static void Display()
@@ -28,7 +28,7 @@ public class Insert_next {
         Node n=head;
         while(n!=null)
         {
-            System.out.print(n.data);
+            System.out.print(n.data+" ");
             n=n.next;
         }
     }
